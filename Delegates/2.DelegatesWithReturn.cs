@@ -37,7 +37,7 @@ namespace DelegatesWithReturn
             string[] mallcolelction = { "Stores", "Restuarant", "Theater", "Play Zone" };
             foreach (string mall in mallcolelction)
             {
-                if (mall.Equals(checkstore))
+                if (mall.Equals(checkstore,StringComparison.OrdinalIgnoreCase))
                 {
                     return true;
                 }
@@ -129,6 +129,11 @@ namespace DelegatesWithReturn
             {
                 Console.WriteLine();
                 Console.WriteLine("KFC Food Stall is Now Available in Mall");
+            }
+            else if (storename.Contains("Zudio"))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Zudio is Now Available in Mall");
             }
             else
             {

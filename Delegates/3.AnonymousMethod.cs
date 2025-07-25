@@ -13,7 +13,7 @@ namespace AnonymousMethods
         
 
 
-        public delegate void RestuarantProcess(string cust, string OrderName);
+        public delegate void RestuarantProcess(string custName, string OrderName);
 
         public delegate void RestVisit(string message);
       
